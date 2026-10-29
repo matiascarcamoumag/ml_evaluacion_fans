@@ -1,0 +1,320 @@
+{
+  "filas_total": 32333,
+  "filas_train": 22630,
+  "filas_train_dino": 1872,
+  "n_estaciones": 31,
+  "n_bahias": 7,
+  "bahias_sin_fisica": {
+    "Tralee Bay": 1043
+  },
+  "PED_en_filas_sin_fisica": {
+    "count": 1043.0,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "25%": 0.0,
+    "50%": 0.0,
+    "75%": 0.0,
+    "max": 0.0
+  },
+  "train_dino_sin_fisica": 12,
+  "n_PED_relleno": 1043,
+  "MLD_min": -48.75,
+  "MLD_max": -0.97,
+  "MLD_positivos": 0,
+  "filas_semana53": 124,
+  "muestras_por_año_min": 30,
+  "muestras_por_año_max": 215,
+  "año_menos_muestras": 2007,
+  "tasa_alerta_año_min": 0.0,
+  "tasa_alerta_año_max": 29.1,
+  "corr_n_vs_tasa_spearman": 0.27,
+  "pct_ceros": 72.4,
+  "pct_alerta_train": 14.7,
+  "n_alerta_train": 275,
+  "D_total_max": 9760.0,
+  "D_total_mediana_alerta": 280.0,
+  "tabla_umbral": [
+    {
+      "umbral_cel_L": 1,
+      "pct_alerta": 27.6,
+      "n_alerta": 517
+    },
+    {
+      "umbral_cel_L": 50,
+      "pct_alerta": 19.4,
+      "n_alerta": 363
+    },
+    {
+      "umbral_cel_L": 100,
+      "pct_alerta": 14.7,
+      "n_alerta": 275
+    },
+    {
+      "umbral_cel_L": 200,
+      "pct_alerta": 10.3,
+      "n_alerta": 193
+    },
+    {
+      "umbral_cel_L": 500,
+      "pct_alerta": 4.2,
+      "n_alerta": 78
+    },
+    {
+      "umbral_cel_L": 1000,
+      "pct_alerta": 2.6,
+      "n_alerta": 49
+    }
+  ],
+  "asimetria": [
+    {
+      "variable": "sur_temp",
+      "skew_original": 0.14,
+      "skew_log1p": -0.26,
+      "skew_yeojohnson": -0.04
+    },
+    {
+      "variable": "bot_temp",
+      "skew_original": 0.42,
+      "skew_log1p": -0.1,
+      "skew_yeojohnson": -0.0
+    },
+    {
+      "variable": "sur_salt",
+      "skew_original": -3.61,
+      "skew_log1p": -3.89,
+      "skew_yeojohnson": -0.13
+    },
+    {
+      "variable": "bot_salt",
+      "skew_original": -1.34,
+      "skew_log1p": -1.39,
+      "skew_yeojohnson": -0.07
+    },
+    {
+      "variable": "PED",
+      "skew_original": 2.12,
+      "skew_log1p": 0.43,
+      "skew_yeojohnson": 0.07
+    },
+    {
+      "variable": "MLD",
+      "skew_original": -0.78,
+      "skew_log1p": NaN,
+      "skew_yeojohnson": -0.29
+    }
+  ],
+  "tasa_alerta_mes": {
+    "Ene": 0.0,
+    "Feb": 0.0,
+    "Mar": 0.9,
+    "Abr": 2.0,
+    "May": 8.5,
+    "Jun": 23.9,
+    "Jul": 38.1,
+    "Ago": 34.9,
+    "Sep": 13.9,
+    "Oct": 2.6,
+    "Nov": 1.6,
+    "Dic": 0.0
+  },
+  "n_candidatas": 54,
+  "prevalencia_verano": 28.4,
+  "n_verano": 867,
+  "top8_fisicas": [
+    "dT_mm4",
+    "dT_lag1",
+    "dT",
+    "dT_lag2",
+    "PED_mm4",
+    "sur_temp",
+    "PED_lag1",
+    "sur_temp_lag1"
+  ],
+  "n_pares_redundantes": 21,
+  "n_tras_filtro_redundancia": 38,
+  "p_alerta_si_previa": 62.0,
+  "p_alerta_no_previa": 8.8,
+  "n_previa_si": 187,
+  "n_previa_no": 880,
+  "disp_lag1": 57.0,
+  "disp_ult4": 85.4,
+  "tasa_bahia": {
+    "Dingle Bay": 4.7,
+    "Long Island Bay": 5.9,
+    "Celtic Sea": 8.3,
+    "Tralee Bay": 8.3,
+    "Kenmare Bay": 16.4,
+    "Dunmanus Bay": 20.2,
+    "Bantry Bay": 24.3
+  },
+  "n_bahia": {
+    "Dingle Bay": 127,
+    "Long Island Bay": 221,
+    "Celtic Sea": 337,
+    "Tralee Bay": 12,
+    "Kenmare Bay": 677,
+    "Dunmanus Bay": 119,
+    "Bantry Bay": 379
+  },
+  "conteo_recomendaciones": {
+    "Incluir": 21,
+    "Débil: probar en selección": 17,
+    "Descartar": 14,
+    "Solo Escenario B": 2
+  },
+  "top10": [
+    {
+      "variable": "D_lag1_log",
+      "familia": "Biológica (Esc. B)",
+      "fuerza": 0.834,
+      "fuerza_verano": 0.783,
+      "info_mutua": 0.1334,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Solo Escenario B"
+    },
+    {
+      "variable": "dT_mm4",
+      "familia": "Media móvil 4 sem",
+      "fuerza": 0.824,
+      "fuerza_verano": 0.67,
+      "info_mutua": 0.1099,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Incluir (fuerte)"
+    },
+    {
+      "variable": "D_ult4_log",
+      "familia": "Biológica (Esc. B)",
+      "fuerza": 0.824,
+      "fuerza_verano": 0.774,
+      "info_mutua": 0.1088,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Solo Escenario B"
+    },
+    {
+      "variable": "dT_lag1",
+      "familia": "Rezago",
+      "fuerza": 0.81,
+      "fuerza_verano": 0.661,
+      "info_mutua": 0.0767,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Descartar (redundante con dT_mm4)"
+    },
+    {
+      "variable": "dT",
+      "familia": "Estratificación",
+      "fuerza": 0.8,
+      "fuerza_verano": 0.64,
+      "info_mutua": 0.0747,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Descartar (redundante con dT_mm4)"
+    },
+    {
+      "variable": "dT_lag2",
+      "familia": "Rezago",
+      "fuerza": 0.8,
+      "fuerza_verano": 0.639,
+      "info_mutua": 0.0774,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Descartar (redundante con dT_mm4)"
+    },
+    {
+      "variable": "PED_mm4",
+      "familia": "Media móvil 4 sem",
+      "fuerza": 0.783,
+      "fuerza_verano": 0.668,
+      "info_mutua": 0.0739,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Incluir (fuerte)"
+    },
+    {
+      "variable": "sem_cos",
+      "familia": "Calendario",
+      "fuerza": 0.781,
+      "fuerza_verano": 0.583,
+      "info_mutua": 0.1028,
+      "direccion": "↓ bajo = alerta",
+      "recomendacion": "Incluir (fuerte)"
+    },
+    {
+      "variable": "sur_temp",
+      "familia": "Original",
+      "fuerza": 0.776,
+      "fuerza_verano": 0.573,
+      "info_mutua": 0.0752,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Incluir (fuerte)"
+    },
+    {
+      "variable": "PED_lag1",
+      "familia": "Rezago",
+      "fuerza": 0.772,
+      "fuerza_verano": 0.667,
+      "info_mutua": 0.05,
+      "direccion": "↑ alto = alerta",
+      "recomendacion": "Descartar (redundante con PED_mm4)"
+    }
+  ],
+  "top10_verano": [
+    {
+      "variable": "D_lag1_log",
+      "familia": "Biológica (Esc. B)",
+      "fuerza": 0.834,
+      "fuerza_verano": 0.783
+    },
+    {
+      "variable": "D_ult4_log",
+      "familia": "Biológica (Esc. B)",
+      "fuerza": 0.824,
+      "fuerza_verano": 0.774
+    },
+    {
+      "variable": "dT_mm4",
+      "familia": "Media móvil 4 sem",
+      "fuerza": 0.824,
+      "fuerza_verano": 0.67
+    },
+    {
+      "variable": "PED_mm4",
+      "familia": "Media móvil 4 sem",
+      "fuerza": 0.783,
+      "fuerza_verano": 0.668
+    },
+    {
+      "variable": "PED_lag1",
+      "familia": "Rezago",
+      "fuerza": 0.772,
+      "fuerza_verano": 0.667
+    },
+    {
+      "variable": "dT_lag1",
+      "familia": "Rezago",
+      "fuerza": 0.81,
+      "fuerza_verano": 0.661
+    },
+    {
+      "variable": "PED",
+      "familia": "Original",
+      "fuerza": 0.761,
+      "fuerza_verano": 0.652
+    },
+    {
+      "variable": "PED_lag2",
+      "familia": "Rezago",
+      "fuerza": 0.759,
+      "fuerza_verano": 0.649
+    },
+    {
+      "variable": "dT",
+      "familia": "Estratificación",
+      "fuerza": 0.8,
+      "fuerza_verano": 0.64
+    },
+    {
+      "variable": "dT_lag2",
+      "familia": "Rezago",
+      "fuerza": 0.8,
+      "fuerza_verano": 0.639
+    }
+  ]
+}

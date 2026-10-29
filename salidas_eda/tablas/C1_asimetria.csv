@@ -1,0 +1,7 @@
+variable,skew_original,skew_log1p,skew_yeojohnson
+sur_temp,0.14,-0.26,-0.04
+bot_temp,0.42,-0.1,-0.0
+sur_salt,-3.61,-3.89,-0.13
+bot_salt,-1.34,-1.39,-0.07
+PED,2.12,0.43,0.07
+MLD,-0.78,,-0.29
